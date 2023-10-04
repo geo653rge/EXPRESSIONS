@@ -28,3 +28,20 @@ display: function() {
 }
 }
 console.log(person.display());
+
+function ageVerify(){
+if(this.age > 18){
+    console.log (' You are eligible to vote');
+} else{
+    console.log( ' You are not eligible to vote');
+    }
+}
+const person1 ={age: 24};
+const person2 ={age: 16};
+// const person3 = {age: 17};
+// const person4 ={age: 18};
+ageVerify.call(person1);
+ageVerify.call(person2);
+// ageVerify.call(person3);
+// ageVerify.call(person4);
+

@@ -17,3 +17,14 @@ obj = obj += i ;
 //output
 
 console.log(obj) ;
+// implicit Binding - this keyword
+
+
+const person = {
+name: 'George',
+age: 27,
+display: function() {
+    return 'Jina langu ni ' + this.name + ' na nina miaka '+ this.age + ' .';
+}
+}
+console.log(person.display());

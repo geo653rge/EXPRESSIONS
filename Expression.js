@@ -55,3 +55,18 @@ function ageVerify(){
 }
 
 console.log(ageVerify());
+
+
+//Arrow Function Binding - this keyword
+
+const someone = {
+name: 'Kimani'  ,
+age: 27 ,
+greet : () => {
+
+    return `Hello, you are ${this.name}  you are  ${this.age}  years old`;
+}
+
+
+}
+console.log(someone.greet());

@@ -45,3 +45,13 @@ ageVerify.call(person2);
 // ageVerify.call(person3);
 // ageVerify.call(person4);
 
+
+//Default Binding
+
+const age = 22
+function ageVerify(){
+    return this.age;
+
+}
+
+console.log(ageVerify());
